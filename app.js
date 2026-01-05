@@ -15,6 +15,6 @@ mongoose.connect(dbURI)
     .then(() => console.log('DB connected'))
     .catch(error => console.log('Connection error:', error))
 
-app.use('/api/books', booksRouter)
+app.use('/api/v1/books', booksRouter)
 
 app.listen(PORT, () => console.log('Listening on port', PORT))
